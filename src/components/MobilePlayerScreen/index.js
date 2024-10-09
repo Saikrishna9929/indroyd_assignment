@@ -42,9 +42,9 @@ const MobilePlayerScreen = () => {
         <select value={answer} onChange={(e) => setAnswer(e.target.value)} required>
           <option value="">Select an Answer</option>
           <option value={sampleQuestions[currentQuestionIndex].options[0]}  >A : {sampleQuestions[currentQuestionIndex].options[0]} </option>
-          <option value = {sampleQuestions[0].options[1]}  >B : {sampleQuestions[0].options[1]}</option>
-          <option value ={sampleQuestions[0].options[2]} >C : {sampleQuestions[0].options[2]}</option>
-          <option value =  {sampleQuestions[0].options[3]} >D : {sampleQuestions[0].options[3]} </option>
+          <option value = {sampleQuestions[currentQuestionIndex].options[1]}  >B : {sampleQuestions[currentQuestionIndex].options[1]}</option>
+          <option value ={sampleQuestions[currentQuestionIndex].options[2]} >C : {sampleQuestions[currentQuestionIndex].options[2]}</option>
+          <option value =  {sampleQuestions[currentQuestionIndex].options[3]} >D : {sampleQuestions[currentQuestionIndex].options[3]} </option>
         </select>
         <br />
         <button type="submit">Submit Answer</button>
